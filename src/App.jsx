@@ -6,7 +6,7 @@ import './App.css';
 const App = () => {
   const formatAPA = (quote, analysis) => (
     <>
-      <blockquote className="quote">"{quote}"</blockquote>
+    {quote !== "" ? (<blockquote className="quote">"{quote}"</blockquote>) : null }
       <p className="analysis">{analysis}</p>
     </>
   );
